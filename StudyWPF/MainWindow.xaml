@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Canvas>
+            <Line x:Name="line" X1="100" Y1="100" X2="200" Y2="100" Stroke="Black" />
+        </Canvas>
     </Grid>
 </Window>
