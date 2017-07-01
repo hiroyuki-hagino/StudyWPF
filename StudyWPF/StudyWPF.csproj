@@ -60,6 +60,8 @@
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="Adorners\LineAdorner.cs" />
+    <Compile Include="Adorners\ResizeThumb.cs" />
+    <Compile Include="Adorners\ShapeAdorner.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
