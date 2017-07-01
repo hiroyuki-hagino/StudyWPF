@@ -12,7 +12,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
+using System.Reflection;
+using System.Xaml;
+using System.Diagnostics;
 using StudyWPF.Adorners;
+using StudyWPF.ViewModels;
 
 namespace StudyWPF
 {
@@ -26,6 +31,31 @@ namespace StudyWPF
             InitializeComponent();
             //
             this.Loaded += MainWindow_Loaded;
+            this.button.Click += Button_Click;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // 読み込み
+            {
+                // XAML
+                var xaml = @"<FluentInfo xmlns='clr-namespace:StudyWPF.ViewModels' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' xmlns:prop='clr-namespace:StudyWPF.Properties' Header='{x:Static prop:Resources.Hagino}' />";
+                // 
+                // 読み込み
+                // 
+                //XamlSchemaContext xamlContext = System.Windows.Markup.XamlReader.GetWpfSchemaContext();
+                var r = new XamlXmlReader(new StringReader(xaml), //xamlContext,
+                    new XamlXmlReaderSettings
+                    {
+                        LocalAssembly = Assembly.GetExecutingAssembly(),
+                    });
+                // 読み込み
+                var p = XamlServices.Load(r) as FluentInfo;
+
+                // 確認
+                Debug.WriteLine(p.Header);
+            }
+
         }
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)

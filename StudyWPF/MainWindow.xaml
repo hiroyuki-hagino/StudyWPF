@@ -4,35 +4,50 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudyWPF"
+        xmlns:vm="clr-namespace:StudyWPF.ViewModels"
+        xmlns:prop="clr-namespace:StudyWPF.Properties"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Canvas>
-            <Line x:Name="line" X1="100" Y1="100" X2="200" Y2="10" Stroke="Black" />
-            <Line X1="100" Y1="100" X2="200" Y2="10" Stroke="Red" 
-                  >
-                <Line.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform />
-                        <TranslateTransform X="5" Y="5"/>
-                    </TransformGroup>
-                </Line.RenderTransform>
-            </Line>
-            <Line X1="100" Y1="100" X2="200" Y2="10" Stroke="Red" 
-                  >
-                <Line.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform />
-                        <TranslateTransform X="-5" Y="-5"/>
-                    </TransformGroup>
-                </Line.RenderTransform>
-            </Line>
 
-            <!--<Rectangle Canvas.Left="100" 
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Vertical">
+            <Button x:Name="button" Content="test" />
+            <Label Content="{x:Static prop:Resources.Hagino}" />
+        </StackPanel>
+        
+        <Grid Grid.Row="2">
+            <Canvas>
+                <Line x:Name="line" X1="100" Y1="100" X2="200" Y2="10" Stroke="Black" />
+                <Line X1="100" Y1="100" X2="200" Y2="10" Stroke="Red" 
+                  >
+                    <Line.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform />
+                            <TranslateTransform X="5" Y="5"/>
+                        </TransformGroup>
+                    </Line.RenderTransform>
+                </Line>
+                <Line X1="100" Y1="100" X2="200" Y2="10" Stroke="Red" 
+                  >
+                    <Line.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform />
+                            <TranslateTransform X="-5" Y="-5"/>
+                        </TransformGroup>
+                    </Line.RenderTransform>
+                </Line>
+
+                <!--<Rectangle Canvas.Left="100" 
                        Canvas.Top="50"
                        Width="100" 
                        Height="10"  Stroke="Red" 
@@ -47,7 +62,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>-->
-            <!--<Rectangle Width="200" Height="100"  Stroke="Blue" 
+                <!--<Rectangle Width="200" Height="100"  Stroke="Blue" 
                        Canvas.Left="100" Canvas.Top="200"
                        RenderTransformOrigin=".5,.5"
                         >
@@ -55,6 +70,7 @@
                     <RotateTransform Angle="0" CenterX="0.5" CenterY="0.5" />
                 </Rectangle.RenderTransform>
             </Rectangle>-->
-        </Canvas>
+            </Canvas>
+        </Grid>
     </Grid>
 </Window>
