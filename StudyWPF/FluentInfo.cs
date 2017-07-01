@@ -8,7 +8,7 @@ namespace StudyWPF.ViewModels
 {
     public class FluentInfo
     {
-        public string Header { get; set; }
-        public string Icon { get; set; }
+        public object Header { get; set; }
+        public object Icon { get; set; }
     }
 }
