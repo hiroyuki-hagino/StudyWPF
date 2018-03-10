@@ -33,6 +33,9 @@ namespace StudyWPF
             this.Loaded += MainWindow_Loaded;
             this.button.Click += Button_Click;
             // mastar revison test3 for confrict
+            // branch test1
+            // branch test2
+            // branch test3
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
