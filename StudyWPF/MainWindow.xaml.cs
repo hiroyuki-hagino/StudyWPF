@@ -36,6 +36,7 @@ namespace StudyWPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            // mastar revison test1
             // 読み込み
             {
                 // XAML Readerに無視されるプレフィックスを指定するmc:Ignorable属性
