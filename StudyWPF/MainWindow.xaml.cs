@@ -35,6 +35,7 @@ namespace StudyWPF
             // mastar revison test3 for confrict
             // branch test1
             // branch test2
+            // branch test3
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
