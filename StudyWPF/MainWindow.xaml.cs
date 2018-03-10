@@ -47,6 +47,7 @@ namespace StudyWPF
                 // XAML Readerに無視されるプレフィックスを指定するmc:Ignorable属性
                 // http://d.hatena.ne.jp/Yamaki/20070409/1176098753
                 // XAML
+                // mastar revison test4
                 var xaml = @"<FluentInfo xmlns='clr-namespace:StudyWPF.ViewModels' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' ";
                 xaml += @"xmlns:d='http://schemas.microsoft.com/expression/blend/2008' xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006' ";
                 xaml += @"mc:Ignorable='d' xmlns:prop='clr-namespace:StudyWPF.Properties' d:IsHiddenCustomize='True' Header='{x:Static prop:Resources.Hagino}' /> ";
