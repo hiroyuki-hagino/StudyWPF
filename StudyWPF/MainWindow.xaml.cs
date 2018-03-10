@@ -39,6 +39,7 @@ namespace StudyWPF
             // mastar revison test1
             // 読み込み
             {
+                // mastar revison test2
                 // XAML Readerに無視されるプレフィックスを指定するmc:Ignorable属性
                 // http://d.hatena.ne.jp/Yamaki/20070409/1176098753
                 // XAML
