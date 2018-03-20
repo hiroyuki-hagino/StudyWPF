@@ -33,8 +33,6 @@ namespace StudyWPF
             this.Loaded += MainWindow_Loaded;
             this.button.Click += Button_Click;
             // mastar revison test3 for confrict
-            // branch test1
-            // branch test2
             // branch test3
             // branch test4
             // branch test5
