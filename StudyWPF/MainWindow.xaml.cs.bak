@@ -31,12 +31,15 @@ namespace StudyWPF
             InitializeComponent();
             //
             this.Loaded += MainWindow_Loaded;
-            // this.button.Click += Button_Click;
+            this.button.Click += Button_Click;
             // mastar revison test3 for confrict
             // branch test3
             // branch test4
-            // branch 0310-3 test1
+<<<<<<< HEAD
+            // branch test5
             // branch 0310-2 test1
+=======
+>>>>>>> hagino/0310-3
             // branch 0310-2 test2
             // branch 0310-3 test1
             // branch 0310-3 test2
@@ -76,14 +79,14 @@ namespace StudyWPF
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            //// 修飾する対象のコントロールのレイヤーを取得
-            //var layer = AdornerLayer.GetAdornerLayer(this.line);
+            // 修飾する対象のコントロールのレイヤーを取得
+            var layer = AdornerLayer.GetAdornerLayer(this.line);
 
-            //// Adorner のインスタンスを生成
-            //var adorner = new LineAdorner(this.line);
+            // Adorner のインスタンスを生成
+            var adorner = new LineAdorner(this.line);
 
-            //// レイヤーに Adorner を追加
-            //layer.Add(adorner);
+            // レイヤーに Adorner を追加
+            layer.Add(adorner);
         }
     }
 }
