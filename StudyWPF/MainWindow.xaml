@@ -7,7 +7,7 @@
         xmlns:vm="clr-namespace:StudyWPF.ViewModels"
         xmlns:prop="clr-namespace:StudyWPF.Properties"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="800" Width="1000">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -21,8 +21,8 @@
             <Button x:Name="button" Content="test" />
             <Label Content="{x:Static prop:Resources.Hagino}" />
         </StackPanel>
-        <local:TableView />
-        <local:DataGridView Grid.Row="1" />
+        <!--<local:DataGridView />-->
+        <local:TableView Grid.Row="0" />
 
         <Canvas Grid.Row="2" Height="100">
             <Line x:Name="line" X1="100" Y1="100" X2="200" Y2="10" Stroke="Black" />

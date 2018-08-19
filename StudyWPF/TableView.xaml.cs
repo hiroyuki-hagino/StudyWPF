@@ -23,6 +23,9 @@ namespace StudyWPF
         public TableView()
         {
             InitializeComponent();
+
+            // var layer = AdornerLayer.GetAdornerLayer(this.textrichbox);
+
         }
     }
 }

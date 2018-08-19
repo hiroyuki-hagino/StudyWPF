@@ -6,8 +6,10 @@
              xmlns:local="clr-namespace:StudyWPF"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <RichTextBox x:Name="textrichbox" HorizontalAlignment="Left" Height="224" VerticalAlignment="Top" Width="525">
+    <Canvas>
+        <RichTextBox x:Name="textrichbox" HorizontalAlignment="Left" 
+                     Height="224" VerticalAlignment="Top" Width="525"
+                     Canvas.Top="50" Canvas.Left="50">
             <FlowDocument>
                 <Table CellSpacing="0">
                     <Table.Columns>
@@ -81,6 +83,7 @@
                 </Table>
 
             </FlowDocument>
-        </RichTextBox>            
-    </Grid>
+        </RichTextBox>
+        <Line X1="175" X2="175" Y1="0" Y2="400" Stroke="Black" StrokeThickness="1" />
+    </Canvas>
 </UserControl>

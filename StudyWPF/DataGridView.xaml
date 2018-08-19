@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
              xmlns:local="clr-namespace:StudyWPF"
              xmlns:vm="clr-namespace:StudyWPF.ViewModels"
              mc:Ignorable="d" 
@@ -11,6 +13,6 @@
         <Grid.DataContext>
             <vm:DataGridViewModel/>
         </Grid.DataContext>
-        <DataGrid ItemsSource="{Binding Persons}"></DataGrid>
+        <xcdg:DataGridControl  ItemsSource="{Binding Persons}"></xcdg:DataGridControl>
     </Grid>
 </UserControl>
