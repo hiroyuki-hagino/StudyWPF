@@ -49,29 +49,6 @@
                 </Line.RenderTransform>
             </Line>
 
-            <!--<Rectangle Canvas.Left="100" 
-                    Canvas.Top="50"
-                    Width="100" 
-                    Height="10"  Stroke="Red" 
-                    RenderTransformOrigin="0.5, 0.5"
-                    >
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-45"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>-->
-            <!--<Rectangle Width="200" Height="100"  Stroke="Blue" 
-                    Canvas.Left="100" Canvas.Top="200"
-                    RenderTransformOrigin=".5,.5"
-                    >
-            <Rectangle.RenderTransform>
-                <RotateTransform Angle="0" CenterX="0.5" CenterY="0.5" />
-            </Rectangle.RenderTransform>
-        </Rectangle>-->
         </Canvas>
 
 
