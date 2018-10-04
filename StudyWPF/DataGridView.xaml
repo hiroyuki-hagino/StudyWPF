@@ -13,6 +13,6 @@
         <Grid.DataContext>
             <vm:DataGridViewModel/>
         </Grid.DataContext>
-        <xcdg:DataGridControl  ItemsSource="{Binding Persons}"></xcdg:DataGridControl>
+        <xcdg:DataGridControl  ItemsSource="{Binding Persons}"/>
     </Grid>
 </UserControl>
