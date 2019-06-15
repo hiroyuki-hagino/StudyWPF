@@ -29,17 +29,47 @@ namespace StudyWPFUITest
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void TestMethodAdd()
         {
             this.driver.Lhs.EmulateChangeText("10");
             this.driver.Rhs.EmulateChangeText("3");
-            this.driver.OperatorType.EmulateChangeSelectedIndex(0); // Add
+            this.driver.OperatorType.EmulateChangeSelectedIndex(0); // +
             this.driver.Execute.EmulateClick();
             Assert.AreEqual("13", this.driver.Answer.Text);
         }
 
         [TestMethod]
-        public void TestMethod2()
+        public void TestMethodSub()
+        {
+            this.driver.Lhs.EmulateChangeText("10");
+            this.driver.Rhs.EmulateChangeText("3");
+            this.driver.OperatorType.EmulateChangeSelectedIndex(1); // -
+            this.driver.Execute.EmulateClick();
+            Assert.AreEqual("7", this.driver.Answer.Text);
+        }
+
+        [TestMethod]
+        public void TestMethodMul()
+        {
+            this.driver.Lhs.EmulateChangeText("10");
+            this.driver.Rhs.EmulateChangeText("3");
+            this.driver.OperatorType.EmulateChangeSelectedIndex(2); // X
+            this.driver.Execute.EmulateClick();
+            Assert.AreEqual("30", this.driver.Answer.Text);
+        }
+
+        [TestMethod]
+        public void TestMethodDiv()
+        {
+            this.driver.Lhs.EmulateChangeText("100");
+            this.driver.Rhs.EmulateChangeText("2");
+            this.driver.OperatorType.EmulateChangeSelectedIndex(3); // X
+            this.driver.Execute.EmulateClick();
+            Assert.AreEqual("50", this.driver.Answer.Text);
+        }
+
+        [TestMethod]
+        public void TestMethodErrorValue()
         {
             this.driver.Lhs.EmulateChangeText("aaa");
             this.driver.Rhs.EmulateChangeText("3");

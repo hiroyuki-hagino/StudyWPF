@@ -23,10 +23,10 @@ namespace StudyWPF.ViewModels
 
         public static OperatorTypeViewModel[] OperatorTypes = new[]
         {
-            new OperatorTypeViewModel("足し算", OperatorType.Add),
-            new OperatorTypeViewModel("引き算", OperatorType.Sub),
-            new OperatorTypeViewModel("掛け算", OperatorType.Mul),
-            new OperatorTypeViewModel("割り算", OperatorType.Div),
+            new OperatorTypeViewModel("+", OperatorType.Add),
+            new OperatorTypeViewModel("-", OperatorType.Sub),
+            new OperatorTypeViewModel("X", OperatorType.Mul),
+            new OperatorTypeViewModel("/", OperatorType.Div),
         };
     }
 }
