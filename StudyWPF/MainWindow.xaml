@@ -32,12 +32,19 @@
         <Label Content="左辺値"/>
         <Label Content="計算方法" Grid.Row="1"/>
         <Label Content="右辺値" Grid.Row="2"/>
-        <TextBox Grid.Column="2" TextWrapping="Wrap" Text="{Binding Lhs, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-        <ComboBox Grid.Column="2" Grid.Row="1" ItemsSource="{Binding OperatorTypes}" SelectedItem="{Binding SelectedOperatorType}" DisplayMemberPath="Label"/>
-        <TextBox Grid.Column="2" Grid.Row="2" TextWrapping="Wrap" Text="{Binding Rhs, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Grid.Column="2" TextWrapping="Wrap" 
+                 Text="{Binding Lhs, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <ComboBox Grid.Column="2" Grid.Row="1" 
+                  ItemsSource="{Binding OperatorTypes}" SelectedItem="{Binding SelectedOperatorType}" 
+                  DisplayMemberPath="Label"/>
+        <TextBox Grid.Column="2" Grid.Row="2" TextWrapping="Wrap" 
+                 Text="{Binding Rhs, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
         <Label Content="答え" Grid.Row="4"/>
-        <TextBlock Grid.Column="2" Grid.Row="4" TextWrapping="Wrap" Text="{Binding Answer}"/>
-        <TextBlock Grid.ColumnSpan="3" Grid.Row="5" TextWrapping="Wrap" Text="{Binding Message}"/>
-        <Button Grid.ColumnSpan="3" Content="計算" Grid.Row="3" Command="{Binding ExecuteCommand, Mode=OneWay}"/>
+        <TextBlock Grid.Column="2" Grid.Row="4" TextWrapping="Wrap" 
+                   Text="{Binding Answer}"/>
+        <TextBlock Grid.ColumnSpan="3" Grid.Row="5" TextWrapping="Wrap" 
+                   Text="{Binding Message}"/>
+        <Button Grid.ColumnSpan="3" Content="計算" Grid.Row="3" 
+                Command="{Binding ExecuteCommand, Mode=OneWay}"/>
     </Grid>
 </Window>
