@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyWPF", "StudyWPF\StudyW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyWPFUITest", "StudyWPFUITest\StudyWPFUITest.csproj", "{A20B4F4F-30FB-4AF6-B4D5-BEDFAC9BEF63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyWPFTest", "StudyWPFTest\StudyWPFTest.csproj", "{41CA6954-DEE6-468F-8199-E4459A886245}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A20B4F4F-30FB-4AF6-B4D5-BEDFAC9BEF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A20B4F4F-30FB-4AF6-B4D5-BEDFAC9BEF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A20B4F4F-30FB-4AF6-B4D5-BEDFAC9BEF63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41CA6954-DEE6-468F-8199-E4459A886245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41CA6954-DEE6-468F-8199-E4459A886245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41CA6954-DEE6-468F-8199-E4459A886245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41CA6954-DEE6-468F-8199-E4459A886245}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
