@@ -7,7 +7,7 @@
         xmlns:vm="clr-namespace:StudyWPF.ViewModels"
         xmlns:prop="clr-namespace:StudyWPF.Properties"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1000">
+        Title="MainWindow" Height="800" Width="1000" FontSize="24">
 
 
     <Window.DataContext>
