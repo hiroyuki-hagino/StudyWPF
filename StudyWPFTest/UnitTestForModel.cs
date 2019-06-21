@@ -5,7 +5,7 @@ using StudyWPF.Models;
 namespace StudyWPFTest
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTestForModel
     {
         [TestMethod]
         public void TestMethodAdd()

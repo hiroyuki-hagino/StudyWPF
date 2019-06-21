@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace StudyWPFUITest
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTestForUI
     {
         private Process process;
         private WindowsAppFriend app;
