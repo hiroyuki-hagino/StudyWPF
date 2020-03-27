@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace QRCodeReader.ViewModels
 {
     /// <summary>
-    /// 
+    /// ViewA ViewModel
     /// </summary>
     public class ViewAViewModel : BindableBase
     {
