@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace QRCodeReader.ViewModels
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class ViewAViewModel : BindableBase
     {
         private string _message;
