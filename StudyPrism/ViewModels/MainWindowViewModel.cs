@@ -11,6 +11,9 @@ namespace StudyPrism.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
+        /// <summary>
+        /// MainWindow ViewModel
+        /// </summary>
         public MainWindowViewModel()
         {
 
